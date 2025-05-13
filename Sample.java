@@ -1,7 +1,28 @@
-// Time Complexity :
-// Space Complexity :
-// Did this code successfully run on Leetcode :
-// Any problem you faced while coding this :
+//time complexity = O(1)
+//space complexity = O(1)
+class MyHashSet {
+  boolean a[];
+  public MyHashSet() {
+    a = new boolean[1000001];
+  }
 
+  public void add(int key) {
+    a[key] = true;
+  }
 
-// Your code here along with comments explaining your approach
+  public void remove(int key) {
+    a[key] = false;
+  }
+
+  public boolean contains(int key) {
+    return a[key];
+  }
+}
+
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * MyHashSet obj = new MyHashSet();
+ * obj.add(key);
+ * obj.remove(key);
+ * boolean param_3 = obj.contains(key);
+ */
